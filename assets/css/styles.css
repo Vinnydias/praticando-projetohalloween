@@ -142,7 +142,48 @@ img {
 }
 
 /*=============== HEADER & NAV ===============*/
+.header{
+  position: fixed;
+  width: 100px;
+  background: transparent;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  transition: background .3s, box=shadow .3s;
+}
 
+.nav{
+  position: relative;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo,.nav__toggle,.nav__close{
+  display: inline-flex;
+  color: var(--white-color);
+}
+
+.nav__logo{
+  align-items: center;
+  column-gap: .5rem;
+  font-weight: var(--font-medium);
+  transition: color .3s;
+}
+
+.nav__logo img{
+  width: 20px;
+}
+
+.nav__logo:hover{
+  color: var(--first-color);
+}
+
+.nav__toggle{
+  font-size: 1.25rem;
+  cursor: pointer;
+}
 
 /* Show menu */
 
